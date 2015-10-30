@@ -63,6 +63,10 @@ try {
 	while (cursor2.hasNext()) {
 		System.out.println(cursor2.next());
 	}
+	/***************delete*******************/
+	BasicDBObject doc = new BasicDBObject();
+	document.put("name", "guillermoso");
+	table.remove(doc);	
 	
 	System.out.println("DONE");
 	
